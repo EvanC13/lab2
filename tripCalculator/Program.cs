@@ -18,3 +18,25 @@ double fuelCost = gallonsNeeded * pricePerGallon;
 //Print Calculations
 System.Console.WriteLine("Gallons needed: " + gallonsNeeded.ToString("F2"));
 System.Console.WriteLine("Fuel cost: " + fuelCost.ToString("C"));
+
+//Part 2
+
+const double pizzaSlices = 8;
+System.Console.Write("How many people are going? ");
+double peopleGoing = Convert.ToDouble(Console.ReadLine());
+
+System.Console.Write("How many pizzas? ");
+double numberOfPizzas = Convert.ToDouble(Console.ReadLine());
+
+System.Console.Write("Price per pizza? ");
+double pricePerPizza = Convert.ToDouble(Console.ReadLine());
+
+//Calculations for Part 2
+
+double totalSlices = numberOfPizzas * pizzaSlices;
+double slicesPerPerson = totalSlices / peopleGoing;
+double pizzaCost = numberOfPizzas * pricePerPizza;
+
+System.Console.WriteLine("Total slices: " + totalSlices.ToString("F0"));
+System.Console.WriteLine("Slices per person: " + slicesPerPerson.ToString("F1"));
+System.Console.WriteLine("Pizza cost: " + pizzaCost.ToString("C"));
