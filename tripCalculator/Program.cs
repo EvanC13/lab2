@@ -1,5 +1,5 @@
 ﻿//Part 1:
-
+/*
 //Input for Part 1
 System.Console.Write("How many miles for your trip? ");
 double tripMiles = Convert.ToDouble(Console.ReadLine());
@@ -37,6 +37,29 @@ double totalSlices = numberOfPizzas * pizzaSlices;
 double slicesPerPerson = totalSlices / peopleGoing;
 double pizzaCost = numberOfPizzas * pricePerPizza;
 
+//Print for Part 2
+
 System.Console.WriteLine("Total slices: " + totalSlices.ToString("F0"));
 System.Console.WriteLine("Slices per person: " + slicesPerPerson.ToString("F1"));
 System.Console.WriteLine("Pizza cost: " + pizzaCost.ToString("C"));
+*/
+//Part 3
+
+System.Console.Write("How many hours have you worked this week? ");
+double hoursWorked = Convert.ToDouble(Console.ReadLine());
+
+System.Console.Write("How much do you make an hour? ");
+double payRate = Convert.ToDouble(Console.ReadLine());
+
+const double taxRate = 0.18;
+
+//Calculations for Part 3
+
+double grossPay = hoursWorked * payRate;
+double taxWithheld = grossPay * taxRate;
+double takeHome = grossPay - taxWithheld;
+
+//Print for Part 3
+System.Console.WriteLine("Gross pay: " + grossPay.ToString("C"));
+System.Console.WriteLine("Tax withheld: " + taxWithheld.ToString("C"));
+System.Console.WriteLine("Take home: " + takeHome.ToString("C"));
